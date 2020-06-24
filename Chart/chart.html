@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/customCss.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>  <!-- 라이브러리 로드 -->
+    <script type="text/javascript" src="resources/bootstrap.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+</header>
+<body>
+    <br><br>
+    <section id="wrap">
+      <h1>코로나웹페이지</h1>
+      <header>
+        <strong class="logo_box"><img src="../images/logo.png" alt="corona19"></strong>
+        <nav>
+          <ul>
+            <li><a href="../public/main.html">메인화면</li>
+            <li><a href="../public/map.html">국내 확진자 현황</li>
+            <li><a href="../public/mask_home.html">공적 마스크 판매 현황</li>
+            <li><a href="./chart.html">데이터시각화</li>
+            <li><a href="../Analysis/01.html">데이터분석</li>
+            <li><a href="#">Contact Us</li>
+          </ul>
+        </nav>
+      </header>
+      <section id="container">
+        <h2 style="margin-left:150px"></h2>
+        <div id="map_global">전 세계 코로나19 상황지도 (기준: 200607)</div>
+        <div id="table_global">전 세계 코로나19 상황판 (기준: 200607)</div>
+
+        <div id="graph_kor">국내 코로나19 확진자 현황 (기준: 200430)</div>
+        <div id="chart_age">국내 코로나19 연령대별 확진자 현황</div>
+        <div id="chart_region">국내 코로나19 지역별 확진자 현황</div>
+        <div id="map_kor">지도에 마우스를 가져가면 지역별 확진자 수를 알 수 있습니다.</div>
+        <div id="chart_route">국내 코로나19 방문 장소 유형</div>
+        <script src="resources/d3-tip.js"></script>
+        <script src="resources/graph_patientnum.js"></script>
+        <script src="resources/globalmap.js"></script>
+        <script src="resources/chart_patientnum_age.js"></script>
+        <script src="resources/chart_patientnum_region.js"></script>
+        <script src="resources/chart_patientroute.js"></script>
+        <script src="resources/koreamap.js"></script>
+        <script src="resources/table_global.js"></script>
+      </section>
+      <footer>
+        <address>광주광역시 북구 용봉로 77 전남대학교</address>
+        <p>TEL 010-1111-2222</p>
+      </footer>
+    </section>
+</body>
+
+</html>

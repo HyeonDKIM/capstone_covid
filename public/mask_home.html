@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>코로나19</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="../public/menu.js"></script>
+  <script type="text/javascript" src="../public/typing.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <style>
+    input[type=text], select{width:100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;}
+    input[type=submit]{width: 100%; background-color: orange; color: white; padding:14px 20px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer;}
+    input[type=submit]:hover{background-color: OrangeRed;}
+    input[type=text]:focus{background-color:lightblue; border: 3px solid #555;}
+    h3{font-size:4em;color:#ed3140; margin: 300px 25% 30px 30%}
+    div.formtag{border-radius: 5px; background-color: #f2f2f2; padding: 40px; margin: 30px 30% 0px 30%}
+    label{font-size:30px;}
+  </style>
+
+</head>
+
+<body>
+  <section id="wrap">
+    <h1>코로나웹페이지</h1>
+    <header>
+      <strong class="logo_box"><img src="../images/logo.png" alt="corona19"></strong>
+      <nav>
+        <ul>
+          <li><a href="./main.html">메인화면</li>
+          <li><a href="./map.html">국내 확진자 현황</li>
+          <li><a href="./mask_home.html">공적 마스크 판매 현황</li>
+          <li><a href="../Chart/chart.html">데이터시각화</li>
+          <li><a href="../Analysis/01.html">데이터분석</li>
+          <li><a href="#">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section id="container">
+      <h3> 마스크 재고현황 확인하기 </h3>
+      <div class="formtag">
+        <form method="post" action="/process/mask">
+          <label for="fname">주소</label>
+          <input type="text" id="fname" name="address" placeholder="OO시 OO구 ('시'단위만 입력 불가)">
+          <input type = "submit" value="검색하기">
+        </form>
+      </div>
+    </section>
+    <footer>
+      <address>광주광역시 북구 용봉로 77 전남대학교</address>
+      <p>TEL 010-1111-2222</p>
+    </footer>
+  </section>
+</body>
+
+</html>
